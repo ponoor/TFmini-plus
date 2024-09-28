@@ -5,7 +5,7 @@ Forked from hideakitai's [TFmini library](https://github.com/hideakitai/TFmini).
 
 ## Usage
 
-```
+```C++
 #include "TFminiPlus.h"
 
 TFminiPlus tfmini;
@@ -33,7 +33,7 @@ void loop()
 
 ### Supported Configuration
 
-```
+```C++
 // default : true
 void enable(bool state);
 
@@ -47,7 +47,7 @@ void setOutputDataPeriod(uint16_t fps);
 // manual trigger for the measurement
 void trigger();
 
-// default : 115200 (0x06)
+// default : 115200
 void setBaudRate(Baudrate baud);
 
 // reset all settings
@@ -62,7 +62,7 @@ void systemReset();
 
 ### Public Constants
 
-```
+```C++
 static const uint32_t DEFAULT_BAUDRATE = 115200;
 
 enum class OutputDataFormat
